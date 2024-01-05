@@ -106,7 +106,7 @@ router.get('/dashboard', checkAuth, (req, res) => {
 
 router.post('/create', checkAuth, async(req, res) => {
     const longUrl = req.body.longUrl;
-    const baseUrl ="http://localhost:8000"
+    const baseUrl ="https://shortlyapp.cyclic.app/"
     
 
     const urlCode = shortid.generate();
